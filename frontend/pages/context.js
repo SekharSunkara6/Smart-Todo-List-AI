@@ -7,7 +7,7 @@ export default function ContextPage() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("http://localhost:8000/api/context/")
+    fetch("https://smart-todo-list-ai.onrender.com/api/context/")
       .then(res => res.json())
       .then(data => {
         setEntries(data);
@@ -18,7 +18,7 @@ export default function ContextPage() {
 
   const addContext = (e) => {
     e.preventDefault();
-    fetch("http://localhost:8000/api/context/", {
+    fetch("https://smart-todo-list-ai.onrender.com/api/context/", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ content, source_type: sourceType }),
