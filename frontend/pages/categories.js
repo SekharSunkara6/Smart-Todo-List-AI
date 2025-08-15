@@ -6,7 +6,7 @@ export default function CategoriesPage() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("http://localhost:8000/api/categories/")
+    fetch("https://smart-todo-list-ai.onrender.com/api/categories/")
       .then(res => res.json())
       .then(data => {
         setCategories(data);
@@ -17,7 +17,7 @@ export default function CategoriesPage() {
 
   const addCategory = (e) => {
     e.preventDefault();
-    fetch("http://localhost:8000/api/categories/", {
+    fetch("https://smart-todo-list-ai.onrender.com/api/categories/", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ name, usage_frequency: 0 }),
@@ -63,7 +63,7 @@ export default function CategoriesPage() {
               <button
                 onClick={() => {
                   if (confirm(`Delete category "${cat.name}"?`)) {
-                    fetch(`http://localhost:8000/api/categories/${cat.id}/`, {
+                    fetch(`https://smart-todo-list-ai.onrender.com/api/categories/${cat.id}/`, {
                       method: "DELETE"
                     })
                       .then(res => {
