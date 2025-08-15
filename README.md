@@ -8,7 +8,7 @@ A full-stack AI-powered todo list application built with Django REST Framework b
 
 This project was developed and tested successfully on a local machine, where all frontend and backend features worked perfectly together with full API data fetching and management.
 
-The app was deployed to Render (backend) and Vercel (frontend) for live hosting. The deployment was successful, but due to some unknown issues, certain frontend pages (especially related to categories) did not fetch data correctly on Vercel. Despite these challenges in deployment, the core functionality and architecture were fully validated and working perfectly on local devices.
+The app was deployed to Render (backend) and Vercel (frontend) for live hosting. The deployment was successful, but due to some unknown issues, certain frontend pages did not fetch data correctly on Vercel. Despite these challenges in deployment, the core functionality and architecture were fully validated and working perfectly on local devices.
 
 The project demonstrates solid understanding of:
 
@@ -26,14 +26,14 @@ The project demonstrates solid understanding of:
 | Technology       | Description                                |
 |------------------|--------------------------------------------|
 | Python 3.13      | Backend programming language               |
-| Django 5.2.5     | Backend web framework                       |
-| Django REST Framework | API library for Django                   |
+| Django 5.2.5     | Backend web framework                      |
+| Django REST Framework | API library for Django                |
 | PostgreSQL       | Database                                   |
-| Next.js          | React framework for frontend                |
+| Next.js          | React framework for frontend               |
 | Tailwind CSS     | Styling                                    |
-| Render           | Backend cloud hosting                       |
-| Vercel           | Frontend cloud hosting                      |
-| OpenAI API       | AI-powered task suggestions                 |
+| Render           | Backend cloud hosting                      |
+| Vercel           | Frontend cloud hosting                     |
+| OpenAI API       | AI-powered task suggestions                |
 
 ---
 
@@ -61,7 +61,7 @@ The project demonstrates solid understanding of:
 1. Clone the repo:
 
    ```
-   git clone https://github.com/yourusername/Smart-Todo-List-AI.git
+   git clone https://github.com/SekharSunkara6/Smart-Todo-List-AI.git
    cd Smart-Todo-List-AI/backend
    ```
 
@@ -141,9 +141,9 @@ The project demonstrates solid understanding of:
 ## Deployment Notes
 
 - Backend deployed on Render: https://smart-todo-list-ai.onrender.com
-- Frontend deployed on Vercel: https://smart-todo-list-ai-omega.vercel.app
+- Frontend deployed on Vercel: https://smart-todo-list-ai-omega.vercel.app/add-task
 
-While deployment was successful, some frontend pages (notably categories) initially failed fetching data due to relative URL and CORS issues. These were identified and resolved by:
+While deployment was successful, some frontend pages initially failed fetching data due to relative URL and CORS issues. These were identified and resolved by:
 
 - Using absolute backend URLs in frontend fetch calls
 - Correctly configuring CORS_ALLOWED_ORIGINS in backend
