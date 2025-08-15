@@ -155,26 +155,27 @@ The project is fully functional locally and deployable with minor tweaks.
 
 ## Screenshots
 
-### Local Backend API Response (Categories)
+### Dashboard
+![Dashboard](./screenshots/dashboard.png)
 
-![Categories API JSON Response](./screenshots/api-categories-json.png)
+### AI Suggestions
+![AI Suggestions](./screenshots/ai-suggestions.png)
 
-### Local Frontend Categories Page
+### Add Task
+![Add Task](./screenshots/add-task.png)
 
-![Categories Page Showing Categories](./screenshots/frontend-categories-page.png)
+### Categories
+![Categories](./screenshots/categories.png)
 
-### Admin Panel with Styled Interface
-
-![Django Admin Panel](./screenshots/django-admin.png)
-
----
+### Context
+![Context](./screenshots/context.png)
 
 ## Contact
 
 For any questions or to request a live demo, please contact me at:
 
-- Email: your.email@example.com
-- LinkedIn: [your-linkedin-profile](https://linkedin.com/in/yourprofile)
+- Email: sekharsunkara2002@gmail.com
+- Portfolio: [https://sekharsunkaraportfolio.netlify.app/](https://sekharsunkaraportfolio.netlify.app/)
 
 ---
 
