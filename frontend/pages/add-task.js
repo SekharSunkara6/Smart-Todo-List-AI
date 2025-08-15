@@ -11,7 +11,7 @@ export default function AddTask() {
   const [submitting, setSubmitting] = useState(false);
 
   useEffect(() => {
-    fetch("http://localhost:8000/api/categories/")
+    fetch("https://smart-todo-list-ai.onrender.com/api/categories/")
       .then(res => res.json())
       .then(data => setCategories(data))
       .catch(err => console.error("Error loading categories:", err));
@@ -19,7 +19,7 @@ export default function AddTask() {
 
 const getAISuggestions = () => {
   setLoadingAI(true);
-  fetch("http://localhost:8000/api/ai/suggestion/", {
+  fetch("https://smart-todo-list-ai.onrender.com/api/ai/suggestion/", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ title, description }),
@@ -53,7 +53,7 @@ const getAISuggestions = () => {
       status: "pending",
     };
 
-    fetch("http://localhost:8000/api/tasks/", {
+    fetch("https://smart-todo-list-ai.onrender.com/api/tasks/", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(payload),
