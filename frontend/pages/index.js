@@ -7,7 +7,7 @@ export default function Home() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("http://localhost:8000/api/tasks/")
+    fetch("https://smart-todo-list-ai.onrender.com/api/tasks/")
       .then(res => res.json())
       .then(data => {
         setTasks(data);
